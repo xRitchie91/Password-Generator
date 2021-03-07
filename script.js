@@ -29,11 +29,48 @@ console.log('I want ${characters} characters in my new password');
 
 // Special characters
 var specialCharacter = true;
-var questionOne = prompt("Click Ok to confirm");
+var questionOne = confirm("Click Ok to confirm");
 
 if (questionOne === specialCharacter) {
-  console.log("I want special characters");
+  console.log("I DO want special characters");
 
 } else {
   console.log("I DON'T want special characters");
 }
+
+// Numeric characters
+var numericCharacter = true;
+var questionTwo = confirm("Click Ok to confirm");
+
+if (questionTwo === numericCharacter) {
+  console.log("I DO want numeric characters");
+} else {
+  console.log("I DON'T want numeric characters");
+}
+
+// Uppercase characters 
+var upperCase = true;
+var questionThree = confirm("Click OK to confirm");
+
+
+if (questionThree === upperCase) {
+console.log("I DO want uppercase characters");
+} else {
+  console.log("I DON'T want uppercase characters");
+}
+
+// Lowercase characters 
+var lowerCase = true;
+var questionFour = confirm("Click OK to confirm");
+
+
+if (questionFour === lowerCase) {
+console.log("I DO want lowercase characters");
+} else {
+  console.log("I DON'T want lowercase characters");
+}
+
+// If neither, loop question again 
+alert("You must choose one");
+
+console.log("I do NOT want numeric characters");
