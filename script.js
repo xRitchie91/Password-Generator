@@ -1,19 +1,31 @@
 // Assignment code here
+const passwordForm = document.getElementById("passwordBox");
+const minPassLength = 8;
+const maxPassLength = 128;
+let specialCharsCheckbox = document.getElementsByName("specialChars")[0];
+let numbersCheckbox = document.getElementsByName("numbers")[0];
+let lwrCharsCheckbox = document.getElementsByName("lwrChars")[0];
+let upprCharsCheckbox = document.getElementsByName("upprChars")[0];
 
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+// Function to generate password
+function createPassword() {
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  // Define character sets 
+  const lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
+  const uppercaseletters = lowercaseLetters.toUpperCase();
+  const numbersList = "0123456789";
+  const specialCharacters = "!@#$%^&*()_+{}|:?><[]";
 
-  passwordText.value = password;
+  // Define checkbox states and where they are 
+  lettersLow = document.getElementsByName("lwrChars")[0].checked;
+  lettersHigh =  document.getElementsByName("upprChars")[0].checked;
+  numbers = document.getElementsByName("numbers")[0].checked;
+  specials = document.getElementsByName("specialChars")[0].checked;
 
-}
+  
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+  // Add event listener to generate button
+  generateBtn.addEventListener("click", writePassword);
 
 var characters = prompt("How many characters would you like in your password?");
 
