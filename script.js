@@ -7,9 +7,14 @@ let numericChar=["1","2","3","4","5","6","7","8","9","0"];
 let specialChar=["!","@","#","$","%","^","&","*","(",")","{","}","|","[","]",";","'",":","<",">","?","/"];
 
 // Function to generate password
+function generatePassword() {
+  passwordLength();
+  passwordOptions();
 
-...
-
+  var passwordGenArray = [];
+  var guaranteed = [];
+  var randomNum;
+  var randomChar;
 
 
 
