@@ -1,28 +1,33 @@
 // Assignment code here
-const passwordForm = document.getElementById("passwordBox");
-const minPassLength = 8;
-const maxPassLength = 128;
-let specialCharsCheckbox = document.getElementsByName("specialChars")[0];
-let numbersCheckbox = document.getElementsByName("numbers")[0];
-let lwrCharsCheckbox = document.getElementsByName("lwrChars")[0];
-let upprCharsCheckbox = document.getElementsByName("upprChars")[0];
+//// create arrays for all lowercase, upercase, numeric, and special characters & a variable for the password string
+let caseArray=[];
+let lowerCaseChar=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+let upperCaseChar=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","W","X","Y","Z"];
+let numericChar=["1","2","3","4","5","6","7","8","9","0"];
+let specialChar=["!","@","#","$","%","^","&","*","(",")","{","}","|","[","]",";","'",":","<",">","?","/"];
 
 // Function to generate password
-function createPassword() {
+function generatePassword() {
 
-  // Define character sets 
-  const lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
-  const uppercaseletters = lowercaseLetters.toUpperCase();
-  const numbersList = "0123456789";
-  const specialCharacters = "!@#$%^&*()_+{}|:?><[]";
+  let passwordString="";
 
-  // Define checkbox states and where they are 
-  lettersLow = document.getElementsByName("lwrChars")[0].checked;
-  lettersHigh =  document.getElementsByName("upprChars")[0].checked;
-  numbers = document.getElementsByName("numbers")[0].checked;
-  specials = document.getElementsByName("specialChars")[0].checked;
+    // Asking user input
+    let useLowerCase=confirm("Do you want to include lowercase characters?");
+    let useUpperCase=confirm("Do you want to include uppercase characters?");
+    let useNumeric=confirm("Do you want to include numeric characters?");
+    let useSpecial=confirm("Do you want to include special characters?");
 
-  
+    //running loop for false variables. If false, user is prompted to select again
+    while (useLowerCase == false && useUpperCase == false && useNumeric == false && useSpecial == false) {
+        alert("Please select one type of character");
+        useLowerCase=confirm("Do you want to include lowercase characters?");
+        useUpperCase=confirm("Do you want to include uppercase characters?");
+        useNumeric=confirm("Do you want to include numeric characters?");
+        useSpecial=confirm("Do you want to include special characters?");
+    }
+
+
+
 
   // Add event listener to generate button
   generateBtn.addEventListener("click", writePassword);
