@@ -7,24 +7,8 @@ let numericChar=["1","2","3","4","5","6","7","8","9","0"];
 let specialChar=["!","@","#","$","%","^","&","*","(",")","{","}","|","[","]",";","'",":","<",">","?","/"];
 
 // Function to generate password
-function generatePassword() {
 
-  let passwordString="";
-
-    // Asking user input
-    let useLowerCase=confirm("Do you want to include lowercase characters?");
-    let useUpperCase=confirm("Do you want to include uppercase characters?");
-    let useNumeric=confirm("Do you want to include numeric characters?");
-    let useSpecial=confirm("Do you want to include special characters?");
-
-    //running loop for false variables. If false, user is prompted to select again
-    while (useLowerCase == false && useUpperCase == false && useNumeric == false && useSpecial == false) {
-        alert("Please select one type of character");
-        useLowerCase=confirm("Do you want to include lowercase characters?");
-        useUpperCase=confirm("Do you want to include uppercase characters?");
-        useNumeric=confirm("Do you want to include numeric characters?");
-        useSpecial=confirm("Do you want to include special characters?");
-    }
+...
 
 
 
