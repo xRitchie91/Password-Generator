@@ -5,14 +5,13 @@ This application generates a password with user-selected inputs such as numeric,
 
 # Screenshots of Deployed Application 
 ## Page at Start
-![Pass Gen 1](https://user-images.githubusercontent.com/74946954/110261591-71614280-7f76-11eb-93a1-1b0a8e87aba6.jpg)
+![Pass Gen 1](https://user-images.githubusercontent.com/74946954/110263326-fc910700-7f7b-11eb-9c40-174ad44e8e3d.jpg)
 
 Password Prompt
-![Pass Gen 2](https://user-images.githubusercontent.com/74946954/110261634-9ce42d00-7f76-11eb-9ac8-dadb029c3eea.jpg)
+![Pass Gen 2](https://user-images.githubusercontent.com/74946954/110263349-0e72aa00-7f7c-11eb-9161-88a9adc828e1.jpg)
 
 ## Generated Password
-![Pass Gen 3](https://user-images.githubusercontent.com/74946954/110261698-d3ba4300-7f76-11eb-9de1-3895e54f36c2.jpg)
-
+![Pass Gen 3](https://user-images.githubusercontent.com/74946954/110263337-0581d880-7f7c-11eb-8adc-5072b7a7c0ad.jpg)
 
 ## This Project Contains:
 HTML, CSS, and JavaScript
