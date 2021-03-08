@@ -7,7 +7,7 @@ This application generates a password with user-selected inputs such as numeric,
 ## Page at Start
 ![Pass Gen 1](https://user-images.githubusercontent.com/74946954/110263326-fc910700-7f7b-11eb-9c40-174ad44e8e3d.jpg)
 
-Password Prompt
+## Password Prompt
 ![Pass Gen 2](https://user-images.githubusercontent.com/74946954/110263349-0e72aa00-7f7c-11eb-9161-88a9adc828e1.jpg)
 
 ## Generated Password
