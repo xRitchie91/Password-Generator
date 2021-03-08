@@ -17,3 +17,5 @@ This application generates a password with user-selected inputs such as numeric,
 HTML, CSS, and JavaScript
 
 Project deployed at: https://xritchie91.github.io/password-generator/
+
+Made by Ritchie🤙🏽
