@@ -13,8 +13,8 @@ body,
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: steelblue;
 }
 
 .wrapper {
@@ -27,7 +27,7 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: ivory;
 }
 
 .card {
@@ -37,6 +37,7 @@ header {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
+  text-align: center;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
@@ -78,7 +79,7 @@ header {
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
-  color: hsl(0, 0%, 100%);
+  color: ivory;
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -135,4 +136,3 @@ button[disabled] {
     font-size: 0.8rem;
   }
 }
-7845\
